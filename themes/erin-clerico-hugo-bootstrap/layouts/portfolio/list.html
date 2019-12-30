@@ -1,5 +1,7 @@
 {{ define "main" }}
 
+{{ partial "portfolio-nav.html" . }}
+
 <h1>{{ .Title }}</h1>
 
 {{ range .Pages.ByPublishDate.Reverse }}
