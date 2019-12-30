@@ -3,6 +3,22 @@ languageCode = "en-us"
 title = "Erin Clerico"
 theme = ["erin-clerico-hugo-bootstrap", "vanilla-bootstrap-hugo-theme", "photoswipe-portfolio"]
 
+# Navbar
+
+[menu]
+[[menu.main]]
+    identifier = "home"
+    name = "home"
+    url = "/"
+    weight = 0
+[[menu.main]]
+    identifier = "portfolio"
+    name = "portfolio"
+    url = "/portfolio/"
+    weight = 20
+
+# Deployment config
+
 [deployment]
 # By default, files are uploaded in an arbitrary order.
 # Files that match the regular expressions in the "Order" list
