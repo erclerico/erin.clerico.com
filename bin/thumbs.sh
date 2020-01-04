@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in `find static/galleries/animals -type f ! -name "*-thumb.jpeg" -name "*.jpeg"`;
+for i in `find static/galleries/$1 -type f ! -name "*-thumb.jpeg" -name "*.jpeg"`;
   do echo $i; 
   if [ -f ${i%.*}-thumb.jpeg ]; 
     then continue; 
