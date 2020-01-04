@@ -1,5 +1,6 @@
 FROM alpine:latest
 MAINTAINER ERC <erin@clerico.com>
+RUN apk update
 RUN apk add --no-cache \
     curl \
     git \
@@ -9,7 +10,11 @@ RUN apk add --no-cache \
     py-pip \
     groff \
     less \
-    mailcap
+    mailcap \
+    imagemagick \
+    bash \
+    pngcrush \
+    optipng=0.7.7-r0
 ENV VERSION 0.62.0
 RUN mkdir -p /usr/local/src \
     && cd /usr/local/src \
